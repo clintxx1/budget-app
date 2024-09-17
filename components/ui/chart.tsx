@@ -1,5 +1,5 @@
 "use client";
-
+//@ts-ignore
 import * as React from "react";
 import * as RechartsPrimitive from "recharts";
 import { cn } from "@/lib/utils";
@@ -68,7 +68,6 @@ ChartContainer.displayName = "Chart";
 
 const ChartStyle = ({ id, config }: { id: string; config: ChartConfig }) => {
   const colorConfig = Object.entries(config).filter(
-    //@ts-nocheck
     ([_, config]) => config.theme || config.color,
   );
 

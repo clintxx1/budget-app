@@ -1,5 +1,5 @@
 "use client";
-
+//@ts-ignore
 import * as React from "react";
 import { ChevronLeftIcon, ChevronRightIcon } from "@radix-ui/react-icons";
 import { DayPicker } from "react-day-picker";
@@ -60,7 +60,6 @@ function Calendar({
         ...classNames,
       }}
       components={{
-        //@ts-expect-error
         IconLeft: ({ ...props }) => <ChevronLeftIcon className="h-4 w-4" />,
         IconRight: ({ ...props }) => <ChevronRightIcon className="h-4 w-4" />,
       }}
