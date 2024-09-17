@@ -22,8 +22,6 @@ type ChartProps = {
 };
 export function BalanceChart({ chartData }: ChartProps) {
   const balance = chartData[0].value;
-  const percentage = Number((balance / 35000) * 100 * 0.01);
-  const endAngle = 450 * Number(percentage);
 
   return (
     <Card className="flex border-none shadow-none">

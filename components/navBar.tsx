@@ -3,7 +3,6 @@ import React from "react";
 import { DatePicker } from "./datepicker";
 import { useAtom } from "jotai";
 import { dateAtom } from "@/app/store/atoms";
-import moment from "moment";
 import { format } from "date-fns";
 
 export default function Navigation() {

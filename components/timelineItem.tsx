@@ -12,8 +12,6 @@ const TimelineItem: React.FC<TimelineItemProps> = ({
   date,
   icon,
   description,
-  isFirst,
-  isLast,
 }) => {
   return (
     <li className="mb-10 ms-4">
