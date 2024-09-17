@@ -26,6 +26,7 @@ export default function Home() {
     };
 
     loader();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   return (
     <div className="flex items-start w-full my-5 gap-5 px-32">

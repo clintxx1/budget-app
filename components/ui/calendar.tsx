@@ -1,5 +1,4 @@
 "use client";
-//@ts-ignore
 import * as React from "react";
 import { ChevronLeftIcon, ChevronRightIcon } from "@radix-ui/react-icons";
 import { DayPicker } from "react-day-picker";
@@ -60,7 +59,9 @@ function Calendar({
         ...classNames,
       }}
       components={{
+        // eslint-disable-next-line @typescript-eslint/no-unused-vars
         IconLeft: ({ ...props }) => <ChevronLeftIcon className="h-4 w-4" />,
+        // eslint-disable-next-line @typescript-eslint/no-unused-vars
         IconRight: ({ ...props }) => <ChevronRightIcon className="h-4 w-4" />,
       }}
       {...props}
